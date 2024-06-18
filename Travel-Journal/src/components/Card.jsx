@@ -3,7 +3,7 @@ import locationIcon from '/assets/location-icon.png'
 export default function Card(props) {
     // const img = props.item.imageUrl
     const img = `./assets/${props.item.imageUrlAssets}`
-    console.log(img)
+    // console.log(img)
     
     return (
         <section>
