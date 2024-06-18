@@ -1,4 +1,13 @@
-:root {
+/* :root {
+} */
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 550px;
   font-family: "Inter", sans-serif;
 }
 
@@ -8,10 +17,14 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: cadetblue;
 }
 
+/* ////////// Navbar CSS ////////// */
+
 header {
+  width: 550px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,4 +44,61 @@ header {
   font-size: 14px;
   font-weight: 500;
   /* background-color: cadetblue; */
+}
+
+/* ////////// Card CSS ////////// */
+
+.card {
+  display: flex;
+  /* background-color: wheat; */
+  border-radius: 5px;
+  padding: 2px;
+  gap: 18px;
+  max-width: 480px;
+  max-height: 170px;
+  margin: 18px 40px;
+}
+
+.card-image {
+  width: 125px;
+  height: 168px;
+}
+
+.card-details-section {
+  font-size: 10px;
+  /* background-color: aquamarine; */
+  align-content: center;
+}
+
+.card-country{
+  letter-spacing: 1.5px;
+  margin-right: 12px;
+  margin-left: 4px;
+}
+
+.card-gMaps a{
+  /* text-decoration: underline; */
+  color: gray;
+}
+
+.card-location {
+  margin: 2px 0 15px 0;
+  font-size: 25px;
+}
+
+.card-date {
+  font-weight: bold;
+}
+
+.card-description {
+  margin-right: 5px;
+  /* background-color: burlywood; */
+}
+
+/* ////////// hr CSS ////////// */
+
+.hr-el {
+  width: 480px;
+  border: 0.5px solid rgb(240, 240, 240);
+  margin: 0 40px;
 }
