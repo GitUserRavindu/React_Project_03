@@ -1,16 +1,15 @@
-import mountFuji from '/assets/mount-fuji.png'
 import locationIcon from '/assets/location-icon.png'
 
 export default function Card(props) {
     // const img = props.item.imageUrl
-    const img = `/assets/${props.item.imageUrlAssets}`
-    // console.log(img)
+    const img = `./assets/${props.item.imageUrlAssets}`
+    console.log(img)
     
     return (
         <section>
             <div className="card">
                 <div className="card-image-section">
-                    <img src={img} alt="Mount Fuji" className="card-image" />
+                    <img src={img} alt={props.item.title} className="card-image" />
                 </div>
                 <div className="card-details-section">
                     <span><img src={locationIcon} alt="Location Icon" className="card-location-icon" /></span>
